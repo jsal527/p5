@@ -1,12 +1,12 @@
 let capture, graphics, p;
 const codeReader = new ZXing.BrowserMultiFormatReader();
 function setup() {
-  createCanvas(440,640);
+  createCanvas(340,540);
   //background(32);
   ///graphics = createGraphics(320, 240);
   capture = createCapture(VIDEO);
   capture.elt.id="video"
-  capture.size(440,640);
+  capture.size(340,540);
   //capture.hide();
   p = createP("Scanning...")
   codeReader
