@@ -3,7 +3,7 @@
 }
 html, body {
   align-items: center;
-  background: #00FFFFFF;
+  background: #333;
   display:flex;
   flex-direction: column;
   height: 100%;
