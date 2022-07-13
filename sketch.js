@@ -7,7 +7,7 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.elt.id="video"
   capture.size(320,240);
-  capture.hide();
+  //capture.hide();
   p = createP("Scanning...")
   codeReader
   .listVideoInputDevices()
