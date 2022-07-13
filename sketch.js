@@ -5,7 +5,6 @@ function setup() {
   //background(32);
   ///graphics = createGraphics(320, 240);
   capture = createCapture(VIDEO);
-  capture.elt.setAttribute('playsinline', '');
   capture.elt.id="video"
   capture.size(440,640);
   //capture.hide();
