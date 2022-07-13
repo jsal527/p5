@@ -8,7 +8,7 @@ function setup() {
   capture.elt.setAttribute('playsinline', '');
   capture.elt.id="video"
   capture.size(440,640);
-  capture.hide();
+  //capture.hide();
   p = createP("Scanning...")
   codeReader
   .listVideoInputDevices()
