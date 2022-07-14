@@ -33,7 +33,7 @@ function setup() {
   codeReader
   .listVideoInputDevices()
   .then(videoInputDevices => {
-    const firstDeviceId = videoInputDevices[2].deviceId;
+    const firstDeviceId = videoInputDevices[1].deviceId;
    //p.html(firstDeviceId);
     codeReader.decodeFromVideoDevice(firstDeviceId, 'video', (result, err) => {
     if (result) {
