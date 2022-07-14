@@ -22,7 +22,7 @@ function setup() {
            }
         }
     });
-  capture.elt.setAttribute('playsinline','');
+  capture.elt.setAttribute('playsinline',true);
   capture.elt.id="video"
   capture.hide();
   capture.size(w, h);
