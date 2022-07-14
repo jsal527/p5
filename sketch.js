@@ -22,6 +22,7 @@ function setup() {
         console.log('capture ready.')
     });
   capture.elt.setAttribute('playsinline', '');
+  capture.elt.id="video"
   capture.hide();
   capture.size(w, h);
   canvas = createCanvas(w, h);
