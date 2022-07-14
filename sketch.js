@@ -18,7 +18,7 @@ function setup() {
             width: w,
             height: h,
 	    facingMode: {
-                   exact: "user"
+                   exact: "environment" 
            }
         }
     });
