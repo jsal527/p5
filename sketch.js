@@ -16,10 +16,7 @@ function setup() {
         audio: false,
         video: {
             width: w,
-            height: h,
-	    facingMode: {
-                   exact: "environment" 
-           }
+            height: h
         }
     });
   capture.elt.setAttribute('playsinline','');
