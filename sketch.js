@@ -5,11 +5,26 @@ function setup() {
   //background(32);
   ///graphics = createGraphics(320, 240);
   
-  capture = createCapture(VIDEO);
-  capture.elt.setAttribute('playsinline', '');
-  capture.elt.id="video"
-  capture.size(240,440);
+  //capture = createCapture(VIDEO);
+  //capture.elt.id="video"
+  //capture.size(240,440);
   //capture.hide();
+	
+  capture = createCapture({
+        audio: false,
+        video: {
+            width: w,
+            height: h
+        }
+    }, function() {
+        console.log('capture ready.')
+    });
+  capture.elt.setAttribute('playsinline', '');
+  capture.hide();
+  capture.size(w, h);
+  canvas = createCanvas(w, h);
+	
+	
   p = createP("Scanning...")
   codeReader
   .listVideoInputDevices()
