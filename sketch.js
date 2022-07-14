@@ -4,7 +4,9 @@ function setup() {
   createCanvas(240,440);
   //background(32);
   ///graphics = createGraphics(320, 240);
+  
   capture = createCapture(VIDEO);
+  capture.elt.setAttribute('playsinline', '');
   capture.elt.id="video"
   capture.size(240,440);
   //capture.hide();
