@@ -17,7 +17,9 @@ function setup() {
         video: {
             width: w,
             height: h,
-	    facingMode: "environment"
+	    facingMode: {
+                   exact: "environment"
+           }
         }
     });
   capture.elt.setAttribute('playsinline', '');
