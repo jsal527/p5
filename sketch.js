@@ -18,7 +18,7 @@ function setup() {
             width: w,
             height: h,
 	    facingMode: {
-                   exact: "User"
+                   exact: "user"
            }
         }
     });
@@ -34,7 +34,7 @@ function setup() {
   .listVideoInputDevices()
   .then(videoInputDevices => {
     const firstDeviceId = videoInputDevices[0].deviceId;
-    console.log(firstDeviceId);
+   p.html(firstDeviceId);
     codeReader.decodeFromVideoDevice(firstDeviceId, 'video', (result, err) => {
     if (result) {
       // properly decoded qr code
