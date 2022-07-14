@@ -1,6 +1,6 @@
 let capture, graphics, p;
-var w = 640;
-var h = 480;
+var w = 240;
+var h = 440;
 const codeReader = new ZXing.BrowserMultiFormatReader();
 function setup() {
   //createCanvas(240,440);
@@ -18,8 +18,6 @@ function setup() {
             width: w,
             height: h
         }
-    }, function() {
-        console.log('capture ready.')
     });
   capture.elt.setAttribute('playsinline', '');
   capture.elt.id="video"
