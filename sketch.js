@@ -1,7 +1,7 @@
 let capture, graphics, p;
 const codeReader = new ZXing.BrowserMultiFormatReader();
 function setup() {
-  createCanvas(240,440);
+  //createCanvas(240,440);
   //background(32);
   ///graphics = createGraphics(320, 240);
   
