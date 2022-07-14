@@ -1,5 +1,4 @@
 let capture, graphics, p;
-var capture;
 var w = 640;
 var h = 480;
 const codeReader = new ZXing.BrowserMultiFormatReader();
