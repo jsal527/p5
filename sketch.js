@@ -8,7 +8,7 @@ function setup() {
   ///graphics = createGraphics(320, 240);
   
   capture = createCapture(VIDEO);
-  capture.elt.id="video"
+  capture.elt.id="video";
   capture.size(240,440);
   capture.hide();	
   p = createP("Scanning...")
