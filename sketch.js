@@ -21,7 +21,7 @@ function setup() {
            }
         }
     });
-  //capture.elt.id="video"
+  capture.elt.id="video";
   capture.elt.setAttribute('playsinline', '');
   capture.hide();
   capture.size(w, h);
@@ -31,7 +31,7 @@ function setup() {
   codeReader
   .listVideoInputDevices()
   .then(videoInputDevices => {
-    const firstDeviceId = videoInputDevices[0].deviceId;
+   //const firstDeviceId = videoInputDevices[0].deviceId;
    //p.html(firstDeviceId);
     codeReader.decodeFromVideoDevice(null, 'video', (result, err) => {
     if (result) {
