@@ -4,16 +4,13 @@ let capture, graphics, p;
 const codeReader = new ZXing.BrowserMultiFormatReader();
 function setup() {
   createCanvas(240,440);
-  //background(32);
+  background(51);
   ///graphics = createGraphics(320, 240);
   
   capture = createCapture(VIDEO);
-  capture.elt.id="video";
+  capture.elt.id="video"
   capture.size(240,440);
-  capture.hide();
-
-	
-	
+  capture.hide();	
   p = createP("Scanning...")
   codeReader
   .listVideoInputDevices()
