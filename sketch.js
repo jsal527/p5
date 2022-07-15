@@ -12,15 +12,18 @@ function setup() {
   //capture.size(240,440);
   //capture.hide();
 	
-  capture = createCapture({
+ capture = createCapture({
         audio: false,
         video: {
             width: w,
-            height: h
+            height: h,
+	    facingMode: {
+                   exact: "environment"
+           }
         }
     });
-  capture.elt.setAttribute('playsinline','');
-  capture.elt.id="video"
+  capture.elt.setAttribute('playsinline', '');
+  capture.elt.id="video";
   capture.hide();
   capture.size(w, h);
   canvas = createCanvas(w, h);
