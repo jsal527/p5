@@ -23,7 +23,7 @@ function setup() {
     });
   capture.elt.id="video";
   capture.elt.setAttribute('playsinline', '');
-  capture.hide();
+  //capture.hide();
   capture.size(w, h);
   canvas = createCanvas(w, h);
 	
