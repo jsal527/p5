@@ -21,7 +21,7 @@ function setup() {
            }
         }
     });
-  capture.elt.id="video"
+  //capture.elt.id="video"
   capture.elt.setAttribute('playsinline', '');
   capture.hide();
   capture.size(w, h);
