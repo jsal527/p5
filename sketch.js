@@ -21,7 +21,7 @@ function setup() {
            }
         }
     });
-  capture.elt.id="video";
+  capture.elt.id="video"
   capture.elt.setAttribute('playsinline', '');
   capture.hide();
   capture.size(w, h);
@@ -33,7 +33,7 @@ function setup() {
   .then(videoInputDevices => {
    const firstDeviceId = videoInputDevices[0].deviceId;
    //p.html(firstDeviceId);
-    codeReader.decodeFromVideoDevice(firstDeviceId, 'video', (result, err) => {
+    codeReader.decodeFromVideoDevice(null, 'video', (result, err) => {
     if (result) {
       // properly decoded qr code
       console.log('Found QR code!', result)
