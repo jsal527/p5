@@ -31,9 +31,9 @@ function setup() {
   codeReader
   .listVideoInputDevices()
   .then(videoInputDevices => {
-   //const firstDeviceId = videoInputDevices[0].deviceId;
+   const firstDeviceId = videoInputDevices[2].deviceId;
    //p.html(firstDeviceId);
-    codeReader.decodeFromVideoDevice(null, 'video', (result, err) => {
+    codeReader.decodeFromVideoDevice(firstDeviceId, 'video', (result, err) => {
     if (result) {
       // properly decoded qr code
       console.log('Found QR code!', result)
