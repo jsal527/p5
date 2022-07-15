@@ -1,16 +1,32 @@
 let capture, graphics, p;
-//var w = 240;
-//var h = 440;
+var w = 240;
+var h = 440;
 const codeReader = new ZXing.BrowserMultiFormatReader();
 function setup() {
-  createCanvas(240,440);
-  background(51);
-  ///graphics = createGraphics(320, 240);
+  //createCanvas(240,440);
+  //background(51);
   
-  capture = createCapture(VIDEO);
-  capture.elt.id="video"
-  capture.size(240,440);
-  //capture.hide();	
+  //capture = createCapture(VIDEO);
+  //capture.elt.id="video"
+  //capture.size(240,440);
+  //capture.hide();
+	
+   capture = createCapture({
+        audio: false,
+        video: {
+            width: w,
+            height: h,
+	    facingMode: {
+                   exact: "environment"
+           }
+        }
+    });
+  capture.elt.setAttribute('playsinline', '');
+  capture.elt.id="video";
+  capture.hide();
+  capture.size(w, h);
+  canvas = createCanvas(w, h);
+	
   p = createP("Scanning...")
   codeReader
   .listVideoInputDevices()
